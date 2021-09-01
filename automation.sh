@@ -55,7 +55,6 @@ if [ $? == 0 ]
 then
         aws s3 cp /tmp/$myname-httpd-logs-$timestamp.tar s3://$s3_bucket/$myname-httpd-logs-$timestamp.tar
 fi
-
 #Pushing to AWS S3 bucket
 aws s3 \
 cp /tmp/${myname}-httpd-logs-${timestamp}.tar \
